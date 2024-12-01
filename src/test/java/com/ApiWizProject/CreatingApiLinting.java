@@ -13,6 +13,8 @@ public class CreatingApiLinting extends BaseClass{
 	public void creatingLinting() throws InterruptedException {
 		String name="qa-testing";
 		String rulesetdiscription="qa-testing";
+		
+		//Creating ApiLintingPage object and sending the values
 		ApiLintingPage apilintingg=new ApiLintingPage(driver);
 		apilintingg.ApiLintingCreate(driver,name, rulesetdiscription, "info-tittle", "Ensure all the swaggers has tittle tags", "$.info.tittle");
 	}
